@@ -2,9 +2,6 @@ package array.easy;
 
 import java.util.Arrays;
 
-/**
- * @author Chen Jiongyu
- */
 public class MoveZeros283 {
     public static void main(String[] args) {
         MoveZeros283 moveZeros283 = new MoveZeros283();
