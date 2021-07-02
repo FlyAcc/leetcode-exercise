@@ -1,8 +1,8 @@
 package array.easy;
 
-public class MaxProfit121 {
+public class BestTimeToBuyAndSellStock121 {
     public static void main(String[] args) {
-        MaxProfit121 maxProfit121 = new MaxProfit121();
+        BestTimeToBuyAndSellStock121 maxProfit121 = new BestTimeToBuyAndSellStock121();
         int[] prices = {7, 1, 5, 3, 6, 4};
         System.out.println(maxProfit121.maxProfit(prices));
         System.out.println(maxProfit121.maxProfit_OnePass(prices));
