@@ -11,17 +11,15 @@ public class NonOverlappingIntervals435 {
         }
 
         Arrays.sort(intervals, Comparator.comparingInt(o -> o[0]));
-        int[] last = intervals[0];
+        int end = intervals[0][1];
         int min = 0;
         for (int i = 1; i < intervals.length; i++) {
             int[] interval = intervals[i];
-            if (interval[0] < last[1]) {
+            if (interval[0] < end) {
                 min++;
-                if (last[1] > interval[1]) {
-                    last = interval;
-                }
+                end = Math.max(end, interval[1]);
             } else {
-                last = interval;
+                end = interval[1];
             }
         }
 
